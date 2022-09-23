@@ -421,7 +421,7 @@ def set_cwd(dir):
 def git_update(repo, is_no_errors=False, is_current_dir=False):
   print("[git] update: " + repo)
   url = "https://github.com/ONLYOFFICE/" + repo + ".git"
-    if (repo == "server"):
+  if (repo == "server"):
     url = "https://github.com/SpeicherBox/" + repo + ".git"
   if config.option("git-protocol") == "ssh":
     url = "git@github.com:ONLYOFFICE/" + repo + ".git"
